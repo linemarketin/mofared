@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Google tag (gtag.js) - كود التتبع الجديد -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16586800443"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16586800443');
+    </script>
+
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16586800443/T11HCKXEyrocELv6meU9',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- دالة معالجة مكالمات الهاتف مع تتبع التحويل ودعم اللمس (iPhone) -->
+    <script>
+    function makePhoneCall(phoneNumber) {
+      var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+      if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+        if (cleanNumber.startsWith('965')) {
+          cleanNumber = '+' + cleanNumber;
+        } else {
+          cleanNumber = '+965' + cleanNumber;
+        }
+      }
+      var telUrl = 'tel:' + cleanNumber;
+      
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(telUrl);
+      }
+      
+      setTimeout(function() {
+        window.location.href = telUrl;
+      }, 100);
+      
+      return false;
+    }
+
+    // دالة معالجة روابط واتساب مع تتبع التحويل
+    function trackWhatsAppClick(url) {
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(url);
+      }
+      setTimeout(function() {
+        window.open(url, '_blank');
+      }, 100);
+      return false;
+    }
+    </script>
+
+    <!-- بيانات منظمة لتحسين SEO (فاليه باركنج) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "خدمات الفاليه باركنج الاحترافية - فخامة الاستقبال في الكويت",
+        "description": "أفضل خدمات الفاليه باركنج والاستقبال للمناسبات والاحتفالات في الكويت - فريق مدرب - أنظمة ذكية - خدمة فاخرة لضيوفك",
+        "telephone": "+96594997464",
+        "areaServed": "Kuwait",
+        "serviceType": "فاليه باركنج, خدمة مواقف السيارات, استقبال السيارات, تنظيم مواقف, فالي باركنج مناسبات",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kuwait"
+        },
+        "openingHours": "Mo-Su 08:00-23:00"
+    }
+    </script>
+
+    <title>خدمات الفاليه باركنج الاحترافية | فخامة الاستقبال في الكويت | 94997464</title>
+    <meta name="description" content="✅ نقدم لكم خدمات الفاليه باركنج الرائدة في الكويت - استقبال فاخر للسيارات - فريق مدرب - أنظمة ذكية - لمناسباتكم وحفلاتكم - اتصل الآن 94997464">
+    <meta name="keywords" content="فاليه باركنج, فالي باركنج, خدمة مواقف السيارات, منسق مواقف, استقبال سيارات, تنظيم مواقف المناسبات, فاليه باركنج بالكويت, خدمة فاليه, وادي باركنج">
+    <meta name="location" content="Kuwait">
+
+    <!-- تحسين الخطوط والأداء -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-orange: #C0392B;
+            --dark-orange: #922B21;
+            --light-orange: #FDEDEC;
+            --accent-red: #B03A2E;
+            --accent-gray: #7F8C8D;
+            --clean-white: #FFFFFF;
+            --soft-gray: #F9F9F9;
+            --text-dark: #2C3E50;
+            --call-green: #27AE60;
+            --highlight-yellow: #F1C40F;
+            --gold-accent: #D4AF37;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: var(--soft-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .scrolling-banner {
+            background: var(--dark-orange);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-bottom: 2px solid var(--gold-accent);
+        }
+        
+        .scrolling-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 20s linear infinite;
+            padding-left: 100%;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .navbar {
+            background: var(--primary-orange);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            color: var(--gold-accent);
+            font-weight: 900;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .phone-display {
+            color: var(--gold-accent);
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+        
+        .phone-display:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.25);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #C0392B, #922B21);
+            color: white;
+            padding: 6rem 2rem 8rem;
+            text-align: center;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(146, 43, 33, 0.88);
+        }
+        
+        .hero h1, .hero p, .hero-buttons {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #FFD9D4;
+            font-weight: 500;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .hero-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.9rem 1.8rem;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            background: var(--accent-red);
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(176, 58, 46, 0.4);
+            will-change: transform;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .secondary-btn {
+            background: var(--call-green);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .services {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-orange);
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gold-accent);
+            margin: 0.5rem auto 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--gold-accent);
+            will-change: transform;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+        
+        .service-list {
+            padding-right: 20px;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        
+        .service-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-right: 30px;
+        }
+        
+        .service-list li::before {
+            content: "✓";
+            color: var(--gold-accent);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .floating-btns {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            gap: 1rem;
+        }
+        
+        .floating-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            color: white;
+            background: var(--accent-red);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(176, 58, 46, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating-secondary {
+            background: var(--call-green);
+        }
+        
+        .floating-whatsapp {
+            background: #25D366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .why-us {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold-accent);
+            margin-bottom: 1rem;
+        }
+        
+        .simple-footer {
+            background: var(--primary-orange);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .simple-footer p {
+            margin: 0.5rem 0;
+            color: #FFD9D4;
+        }
+        
+        .footer-phone {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .footer-phone:hover {
+            transform: scale(1.05);
+            color: var(--gold-accent);
+        }
+        
+        .search-tags {
+            background-color: #f8f9fa;
+            padding: 25px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .service-tag {
+            background: linear-gradient(135deg, #C0392B 0%, #B03A2E 100%);
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #F1C40F;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            cursor: default;
+            transition: transform 0.2s;
+        }
+        
+        .service-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .types-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, var(--soft-gray), white);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .type-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-bottom: 3px solid var(--gold-accent);
+        }
+        
+        .type-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .packages {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .package-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+            border-top: 4px solid var(--gold-accent);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-title {
+            font-size: 1.5rem;
+            color: var(--primary-orange);
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-price {
+            font-size: 1.3rem;
+            color: var(--gold-accent);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .package-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent-red);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .package-btn:hover {
+            background: var(--primary-orange);
+            transform: scale(1.05);
+        }
+        
+        .testimonials {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--accent-red);
+        }
+        
+        .contact-form {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--accent-red);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: var(--primary-orange);
+            transform: scale(1.02);
+        }
+        
+        .hours-badge {
+            background: var(--call-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .contact-info {
+            background: #FDEDEC;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 5rem 1rem 6rem;
+                min-height: 55vh;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .services, .packages, .why-us, .testimonials, .contact-form, .types-section {
+                padding: 3rem 1rem;
+            }
+            .floating-btns {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            .floating-btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+            🚗✨ فخامة الاستقبال تبدأ من خطوتهم الأولى.. خدمة فاليه باركن احترافية لمناسباتكم في الكويت | فريق مدرب | أنظمة ذكية | اتصل: 94997464 | خدمة فاخرة لضيوفكم
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">🚘 فاليه باركنج - فخامة الاستقبال بالكويت</div>
+        <div class="phone-display" onclick="makePhoneCall('94997464')">
+            <i class="fas fa-phone"></i> 94997464
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hours-badge">
+            <i class="fas fa-car"></i> خدمة فاليه باركنج فاخرة - فريق محترف - أنظمة حديثة - استقبال VIP
+        </div>
+        <h1>🚗✨ خدمات الفاليه باركنج الاحترافية | فخامة الاستقبال في الكويت | اتصل 94997464</h1>
+        <p>لأن الانطباع الأول يدوم، ولأن ضيوفكم يستحقون استقبالاً يليق بمقامهم.. نقدم لكم خدمات الفاليه باركنج الرائدة في الكويت. فريق عمل احترافي، مدرب، ومنظم يضمن تجربة ركن آمنة وسلسة منذ لحظة الوصول.</p>
+        <div class="hero-buttons">
+            <button class="hero-btn secondary-btn" onclick="makePhoneCall('94997464')">
+                <i class="fas fa-phone-volume"></i>
+                اطلب خدمة الفاليه الآن
+            </button>
+            <button class="hero-btn whatsapp-btn" onclick="trackWhatsAppClick('https://wa.me/96594997464')">
+                <i class="fab fa-whatsapp"></i>
+                واتساب فوري
+            </button>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">خدمات الفاليه باركنج المتكاملة</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-people-arrows service-icon"></i>
+                <h3>استقبال السيارات الفاخر</h3>
+                <ul class="service-list">
+                    <li>فريق استقبال مدرب بأعلى معايير الفخامة</li>
+                    <li>توجيه الضيوف منذ لحظة الوصول بكل احترافية</li>
+                    <li>تبريد السيارات وتجهيزها قبل المغادرة</li>
+                    <li>خدمة كبار الشخصيات VIP</li>
+                    <li>انطباع أول لا يُنسى لمناسباتكم</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-parking service-icon"></i>
+                <h3>تنظيم وإدارة المواقف</h3>
+                <ul class="service-list">
+                    <li>تصميم وتنظيم مسارات السيارات والمواقف</li>
+                    <li>استخدام أحدث الأنظمة الذكية لإدارة السيارات</li>
+                    <li>ضمان أقصى استفادة من المساحات المتاحة</li>
+                    <li>منع الازدحام وضمان انسيابية الحركة</li>
+                    <li>خدمة سحب وإيقاف آمنة للسيارات الفارهة</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h3>الأمان والتأمين على السيارات</h3>
+                <ul class="service-list">
+                    <li>تأمين شامل على جميع السيارات أثناء الخدمة</li>
+                    <li>كاميرات مراقبة ونظام تتبع ذكي</li>
+                    <li>فريق أمني متخصص لحراسة السيارات</li>
+                    <li>تسليم ومغادرة آمنة وفق بروتوكول دقيق</li>
+                    <li>راحة بال كاملة للحضور والمنظمين</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <h2 class="section-title">مناسباتنا تشمل جميع الاحتفالات والفعاليات</h2>
+        <div class="types-grid">
+            <div class="type-item"><h3>أعراس وقاعات أفراح</h3><p>استقبال مثالي للعائلات والضيوف</p></div>
+            <div class="type-item"><h3>مؤتمرات وفعاليات شركات</h3><p>خدمة احترافية لضيوف الأعمال</p></div>
+            <div class="type-item"><h3>حفلات خاصة وعشاء</h3><p>لمسة فخامة في كل مناسبة</p></div>
+            <div class="type-item"><h3>معارض ومهرجانات</h3><p>تنظيم مواقف للزوار بكفاءة</p></div>
+            <div class="type-item"><h3>فنادق ومنتجعات</h3><p>خدمة فاليه على مدار الساعة</p></div>
+            <div class="type-item"><h3>نوادي وشاليهات</h3><p>راحة وسلاسة لرواد النوادي</p></div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2 class="section-title">لماذا نختار خدمات الفاليه باركنج لدينا؟</h2>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-user-tie feature-icon"></i><h3>فريق احترافي مدرب</h3><p>أفراد مختارين بعناية وتدريب على أعلى معايير الضيافة</p></div>
+            <div class="feature-item"><i class="fas fa-microchip feature-icon"></i><h3>أنظمة ذكية حديثة</h3><p>إدارة إلكترونية متطورة لمواقف السيارات</p></div>
+            <div class="feature-item"><i class="fas fa-gem feature-icon"></i><h3>فخامة في كل التفاصيل</h3><p>مظهر أنيق، تعامل راقٍ، وخدمة لا تنسى</p></div>
+            <div class="feature-item"><i class="fas fa-clock feature-icon"></i><h3>مرونة ومواعيد دقيقة</h3><p>خدمة تتناسب مع جدول مناسبتكم بدقة</p></div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2 class="section-title">باقات الفاليه باركنج حسب حجم مناسبتكم</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3 class="package-title">باقة الاستقبال الفضي</h3>
+                <div class="package-price">أسعار تنافسية</div>
+                <ul class="package-features">
+                    <li>فريق من 4 أفراد لفاليه السيارات</li>
+                    <li>تنظيم مواقف أساسي</li>
+                    <li>مظلات وعلامات إرشادية</li>
+                    <li>تأمين أساسي للسيارات</li>
+                    <li>مدة تصل إلى 4 ساعات</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('94997464')">طلب السعر والحجز</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة الفخامة الذهبية</h3>
+                <div class="package-price">عروض خاصة للمناسبات الكبرى</div>
+                <ul class="package-features">
+                    <li>فريق من 8 أفراد + مشرف</li>
+                    <li>زي رسمي فاخر للعاملين</li>
+                    <li>نظام إلكتروني لتسجيل السيارات</li>
+                    <li>تأمين شامل + كاميرات</li>
+                    <li>خدمة تبريد السيارات قبل المغادرة</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('94997464')">طلب السعر والحجز</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة VIP البلاتينية</h3>
+                <div class="package-price">خدمة النخبة</div>
+                <ul class="package-features">
+                    <li>فريق خاص لكبار الشخصيات</li>
+                    <li>منطقة مواقف مخصصة VIP</li>
+                    <li>تطبيق إدارة ذكي للسيارات</li>
+                    <li>تأمين شامل بحدود عالية</li>
+                    <li>خدمة استقبال خاصة بكل سيارة فارهة</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('94997464')">طلب السعر والحجز</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">آراء عملائنا الكرام</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"><p class="testimonial-text">"خدمة فاليه باركنج فاخرة بكل معنى الكلمة، فريق محترف وأنيق جداً. ضيوفنا انبهرت من طريقة الاستقبال، أنصح بهم وبشدة لأي حفل كبير."</p><p class="testimonial-author">- الشيخة نورة - حولي</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"من أفضل شركات تنظيم مواقف السيارات في الكويت. تعاملهم راقي وتنظيمهم ممتاز بدون أي ازدحام. رقم 94997464 هو الرقم الموثوق."</p><p class="testimonial-author">- فارس - مؤتمر كبرى الشركات</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"أنظمة ذكية وأمان عالي، سيارات الضيوف كانت آمنة تماماً. الخدمة السلسة جعلت حفل زفاف ابنتي مميزاً بلا شك. شكراً لفريق الفاليه المحترف."</p><p class="testimonial-author">- أم محمد - الجهراء</p></div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 class="section-title">اطلب خدمة الفاليه باركنج لمناسبتك الآن</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group"><label for="name">الاسم الكامل</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" name="phone" required></div>
+                <div class="form-group"><label for="area">المنطقة بالكويت</label><input type="text" id="area" name="area" required></div>
+                <div class="form-group"><label for="service">نوع المناسبة أو الفعالية</label>
+                    <select id="service" name="service" required>
+                        <option value="">اختر نوع المناسبة</option>
+                        <option value="خدمة فاليه لمناسبة خاصة">خدمة فاليه لمناسبة خاصة</option>
+                        <option value="خدمة فاليه لحفل زفاف">خدمة فاليه لحفل زفاف</option>
+                        <option value="خدمة فاليه لمؤتمر أو حدث شركات">خدمة فاليه لمؤتمر أو حدث شركات</option>
+                        <option value="خدمة فاليه لفندق أو منتجع">خدمة فاليه لفندق أو منتجع</option>
+                        <option value="خدمة فاليه لمعرض أو مهرجان">خدمة فاليه لمعرض أو مهرجان</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="brand">عدد السيارات المتوقع</label>
+                    <select id="brand" name="brand"><option value="">اختر العدد التقريبي</option><option value="أقل من 50 سيارة">أقل من 50 سيارة</option><option value="50 - 150 سيارة">50 - 150 سيارة</option><option value="150 - 300 سيارة">150 - 300 سيارة</option><option value="أكثر من 300 سيارة">أكثر من 300 سيارة</option></select>
+                </div>
+                <div class="form-group"><label for="message">تفاصيل المناسبة وتاريخها (لأفضل ترتيب)</label><textarea id="message" name="message" placeholder="مثال: حفل زفاف، التاريخ 20 ديسمبر، الموقع في حولي، نريد استقبال VIP..."></textarea></div>
+                <button type="submit" class="submit-btn">اطلب فخامة الفاليه باركنج</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> يومياً من 8 صباحاً حتى 11 مساءً (خدمة طوارئ للمناسبات)
+            <br><br>
+            <i class="fas fa-map-pin"></i> <strong>نغطي جميع مناطق الكويت</strong> | حولي، الفروانية، العاصمة، الجهراء، مبارك الكبير، الأحمدي
+            <br><br>
+            <i class="fas fa-phone-alt"></i> <strong>للاستفسار وحجز فخامة الاستقبال:</strong> <span style="font-weight:bold;font-size:1.2rem;" onclick="makePhoneCall('94997464')">94997464</span>
+            <br><br>
+            <i class="fas fa-car-side"></i> <strong>خدمات فاليه باركنج احترافية | أنظمة ذكية | فريق مدرب | ضمان الأمان والفخامة</strong>
+        </div>
+    </section>
+
+    <div class="search-tags">
+        <h3>كلمات بحث شائعة عن خدمات الفاليه باركنج في الكويت</h3>
+        <div class="tags-container">
+            <span class="service-tag">فاليه باركنج</span><span class="service-tag">فالي باركنج</span><span class="service-tag">خدمة مواقف السيارات</span>
+            <span class="service-tag">استقبال سيارات المناسبات</span><span class="service-tag">تنظيم مواقف الزفاف</span><span class="service-tag">فاليه باركنج الكويت</span>
+            <span class="service-tag">شركة فاليه احترافية</span><span class="service-tag">خدمة فاليه فاخرة</span><span class="service-tag">منسق مواقف سيارات</span>
+            <span class="service-tag">إدارة مواقف الضيوف</span><span class="service-tag">Valet Parking Kuwait</span>
+        </div>
+    </div>
+
+    <div class="floating-btns">
+        <button class="floating-btn floating-secondary" onclick="makePhoneCall('94997464')">
+            <i class="fas fa-phone-volume"></i> اتصل لحجز الفاليه
+        </button>
+        <button class="floating-btn floating-whatsapp" onclick="trackWhatsAppClick('https://wa.me/96594997464')">
+            <i class="fab fa-whatsapp"></i> واتساب
+        </button>
+    </div>
+
+    <div class="simple-footer">
+        <p>🚗✨ فخامة الاستقبال تبدأ من خطوتهم الأولى.. خدمة فاليه باركن احترافية لمناسباتكم في الكويت | لأن الانطباع الأول يدوم، ولأن ضيوفكم يستحقون استقبالاً يليق بمقامهم</p>
+        <div class="footer-phone" onclick="makePhoneCall('94997464')"><i class="fas fa-phone"></i> 94997464</div>
+        <p>فريق مدرب، أنظمة ذكية، تأمين شامل - خدمة فاليه باركنج تغطي جميع مناطق الكويت بكل فخامة واحترافية.</p>
+        <p>جميع الحقوق محفوظة © 2026 | فاليه باركنج بريميوم - فخامة الاستقبال بالكويت</p>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
+            }
+            alert('شكراً لتواصلكم! سيتم الاتصال بكم من قبل منسق الفاليه باركنج لتأكيد تفاصيل المناسبة وتجهيز أفضل استقبال لضيوفكم.');
+            this.reset();
+        });
+        
+        function makePhoneCall(phoneNumber) {
+            var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+            if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+                if (cleanNumber.startsWith('965')) {
+                    cleanNumber = '+' + cleanNumber;
+                } else {
+                    cleanNumber = '+965' + cleanNumber;
+                }
+            }
+            var telUrl = 'tel:' + cleanNumber;
+            
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(telUrl);
+            }
+            
+            setTimeout(function() {
+                window.location.href = telUrl;
+            }, 100);
+            return false;
+        }
+        
+        function trackWhatsAppClick(url) {
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(url);
+            }
+            setTimeout(function() {
+                window.open(url, '_blank');
+            }, 100);
+            return false;
+        }
+        
+        // تعزيز دعم اللمس لأجهزة iPhone وجميع الشاشات التي تعمل باللمس
+        var phoneElements = document.querySelectorAll('[onclick*="makePhoneCall"], .phone-display, .footer-phone, .hero-btn, .package-btn, .floating-btn');
+        phoneElements.forEach(function(el) {
+            el.addEventListener('touchstart', function(e) {
+                if (this.getAttribute('onclick')) {
+                    var onclickAttr = this.getAttribute('onclick');
+                    if (onclickAttr.includes('makePhoneCall')) {
+                        var match = onclickAttr.match(/'([^']+)'/);
+                        if (match && match[1]) {
+                            e.preventDefault();
+                            makePhoneCall(match[1]);
+                            return false;
+                        }
+                    } else if (onclickAttr.includes('trackWhatsAppClick')) {
+                        var matchUrl = onclickAttr.match(/'(https?:\/\/[^']+)'/);
+                        if (matchUrl && matchUrl[1]) {
+                            e.preventDefault();
+                            trackWhatsAppClick(matchUrl[1]);
+                            return false;
+                        }
+                    }
+                }
+            }, { passive: false });
+        });
+    </script>
+</body>
+</html>
